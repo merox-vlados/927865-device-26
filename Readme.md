@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Vlad Godenko](https://up.htmlacademy.ru/htmlcss/26/user/927865).
-* Наставник: `Неизвестно`.
+* Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/tatien).
 
 ---
 
