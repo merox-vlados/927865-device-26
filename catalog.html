@@ -9,7 +9,20 @@
 			<a class="main-header-logo" href="#">
 				<img src="img/logo.svg" alt="Логотип сайта Device">
 			</a>
-			<form></form>
+			<form>
+				<input type="search" name="search" placeholder="Поиск по сайту">
+			</form>
+			<ul class="">
+				<li>
+					<a href="#">Войти</a>
+				</li>
+				<li>
+					<a href="#">Сравнить</a>
+				</li>
+				<li>
+					<a href="#">Корзина</a>	
+				</li>
+			</ul>
 			<nav>
 				<li><a href="#">Каталог товаров</a></li>
 				<li><a href="#">Доставка</a></li>
@@ -26,7 +39,46 @@
 			</ul>
 			<section class="filters">
 				<h2 class="filters-title">Фильтр:</h2>
-				<!--<form></form>-->
+				<form class="filter" action="https://echo.htmlacademy.ru" method="get">
+				<fieldset>
+					<legend>Цвет:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="filter-input filter-input-checkbox" type="checkbox" name="color" id="black-color" checked>
+							<label for="black-color">Черный</label>
+						</li>
+						<li class="filter-option">
+							<input class="filter-input filter-input-checkbox" type="checkbox" name="color" id="white-color">
+							<label for="white-color">Белый</label>
+						</li>
+						<li class="filter-option">
+							<input class="filter-input filter-input-checkbox" type="checkbox" name="color" id="blue-color" checked>
+							<label for="blue-color">Синий</label>
+						</li>
+						<li class="filter-option">
+							<input class="filter-input filter-input-checkbox" type="checkbox" name="color" id="red-color" checked>
+							<label for="red-color">Красный</label>
+						</li>
+						<li class="filter-option">
+							<input class="filter-input filter-input-checkbox" type="checkbox" name="color" id="rose-color">
+							<label for="rose-color">Розовый</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Bluetooth:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="filter-radio filter-input-radio" name="bluetooth" type="radio" id="filter-yes">
+							<label for="filter-yes">Есть</label>
+						</li>
+						<li class="filter-option">
+							<input class="filter-radio filter-input-radio" name="bluetooth" type="radio" id="filter-no">
+							<label for="filter-no">Нет</label>
+						</li>
+					</ul>
+				</fieldset>
+			</form>
 			</section>
 			<section class="catalog">
 				<div>
@@ -106,9 +158,34 @@
 						<li class="social-button"><a href="#">Инстаграм</a></li>
 					</ul>
 				</div>
-			<form></form>
+			<ul class="">
+				<li>
+					<a href="#">Войти</a>
+				</li>
+				<li>
+					<a href="#">Сравнить</a>
+				</li>
+				<li>
+					<a href="#">Корзина</a>	
+				</li>
+			</ul>
 			<p>Тел: +7(495)495-95-95 </p>
 			<a class="logo" href="">
 				<img src="img/logo-html.svg">
 			</a>	
     	</footer>
+    	<section>
+				<h2 class="visually-hidden">Личный кабинет</h2>
+				<span class="close"></span> <!-- крестик закрытия /-->
+				<form action="https://echo.htmlacademy.ru" method="post">
+					<label for="user-login">Ваше имя</label>
+					<input id="user-login" type="text" name="login" placeholder="Имя Фамилия">
+					<label for="user-email">Ваш e-mail:</label>
+					<input id="user-email" type="email" name="email" placeholder="email@example.com">
+					<label for="user-note">Текст письма:</label>
+					<textarea name="note" id="user-note" placeholder="В свободной форме"></textarea>
+					<button type="button">Отправить</button>
+				</form>
+		</section>
+</body>
+</html>
