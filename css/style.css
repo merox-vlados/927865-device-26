@@ -1,0 +1,228 @@
+@font-face {
+	font-family: "Gilroy Light";
+	font-style: normal;
+	font-weight: 300;
+	src:
+		local("Gilroy Light"),
+		url("../fonts/gilroylight.woff") format("woff"),
+		url("../fonts/gilroylight.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Gilroy ExtraBold";
+	font-style: normal;
+	font-weight: 800;
+	src:
+		local("Gilroy ExtraBold"),
+		url("../fonts/gilroyextrabold.woff") format("woff"),
+		url("../fonts/gilroyextrabold.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Open Sans Light";
+	font-style: normal;
+	font-weight: 300;
+	src:
+		local("Open Sans Light"),
+		url("../fonts/opensanslight.woff") format("woff"),
+		url("../fonts/opensanslight.woff2") format("woff2")
+}
+@font-face {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Open Sans"),
+		url("../fonts/opensans.woff") format("woff"),
+		url("../fonts/opensans.woff2") format("woff2");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color: #525252;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-header {
+	width: 1160px;
+	min-height: 300px;
+	margin: 40px 140px;
+	color: #ffffff;
+
+	background-color: #f7e296;
+	background-image: url("../img/pattern-light.jpg");
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+.header-user-interface,
+.site-navigation,
+.site-navigation-catalog,
+.footer-services-item,
+.footer-user-interface,
+.footer-social-button {
+	list-style: none;
+}
+
+.header-user-interface a,
+.site-navigation a,
+.site-navigation-catalog a {
+	color: #000000;
+}
+
+.site-navigation,
+.footer-services-item {
+	text-transform: uppercase;
+}
+.site-navigation-catalog {
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 36px;
+	color: #000000;
+	text-transform: none;
+}
+
+.site-navigation {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.about-us-title,
+.contacts-title {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+	color: #000000;
+
+}
+
+.about-us p,
+.contacts p {
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color: #848484;
+}
+
+.about-us-service {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #000000;
+}
+
+.button {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #000000;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border: none;
+	background: none;
+}
+
+.about-us-button a,
+.contacts-info-button a {
+	color: #000000;
+}
+
+/*catalog css... */
+.page-title {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+	color: #000000;
+}
+
+.breadcrumbs {
+	list-style: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs-current {
+	font-family: "Open Sans Light", Arial, sans-serif;
+	color: #b2b2b2;
+}
+
+.filters {
+	width: 468px;
+	background: url("../img/filters-layer.jpg") no-repeat #efefef;
+}
+.filter fieldset {
+ 	border: none;
+}
+
+.filter legend {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+ 	font-size: 18px;
+ 	line-height: 24px;
+}
+
+.filter ul {
+	list-style: none;
+	line-height: 40px;
+}
+
+.catalog ul {
+	list-style: none;
+}
+
+.catalog-item h3 span {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+ 	line-height: 24px;
+}
+
+.catalog-item p span {
+	font-family: "Gilroy Light", Arial, sans-serif;
+	font-size: 16px;
+ 	line-height: 24px;
+}
+/* ...catalog css*/
+
+.main-footer {
+	color: #ffffff;
+	
+	background-color: #464646;
+	background-image: url("../img/pattern-dark.jpg");
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+.footer-services-item {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.footer-services-item a,
+.footer-user-interface a,
+.footer-social-button a {
+	color: #ffffff;
+}
+
+
+
+
+
+
+.visually-hidden {
+	display: none;
+}
