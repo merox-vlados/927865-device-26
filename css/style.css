@@ -120,9 +120,15 @@ a {
 	letter-spacing: 2px;
 }
 
+ul .site-navigation-catalog {
+	width: 1160px;
+	position: absolute;
+	background-image: url("../img/pattern-light.jpg");
+}
+
 .site-navigation-catalog li {
 	display: flex;
-	position: absolute;
+	position:;
 	padding: 0px;
 	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 15px;
