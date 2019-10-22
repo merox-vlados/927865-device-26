@@ -8,58 +8,64 @@
   	</head>
 	<body>
 		<header class="main-header">
-			<a class="main-header-logo" href="#">
-				<img src="img/logo.svg" alt="Логотип сайта Device">
-			</a>
-			<ul class="header-user-interface">
-				<li>
-					<form class="header-search">
-						<input type="search" name="search" placeholder="Поиск по сайту">
-					</form>
-				</li>
-				<li>
-					<a href="#">Войти</a>
-				</li>
-				<li>
-					<a href="#">Сравнить</a>
-				</li>
-				<li>
-					<a href="#">Корзина</a>	
-				</li>
-			</ul>
-			<nav class="main-navigation">
-			<div class="site-navigation">
-				<div class="navigation-catalog-container">
-					<ul class="site-navigation-catalog"><a href="#">Каталог товаров</a><ul>
-						<li>
-							<a href="">Виртуальная реальность</a>
-						</li>
-						<li>
-							<a href="">Моноподы для селфи</a>
-						</li>
-						<li>
-							<a href="">Экшн-камеры</a>
-						</li>
-						<li>
-							<a href="">Фитнес-браслеты</a>
-						</li>
-						<li>
-							<a href="">Умные часы</a>
-						</li>
-						<li>
-							<a href="">Квадрокоптеры</a>
-						</li>
-					</ul>
+			<div class="header-container">
+				<a class="main-header-logo" href="#">
+					<img src="img/logo.svg" alt="Логотип сайта Device">
+				</a>
+				<ul class="header-user-interface">
+					<li>
+						<form class="header-search">
+							<input type="search" name="search" placeholder="Поиск по сайту">
+						</form>
+					</li>
+					<li>
+						<a href="#">Войти</a>
+					</li>
+					<li>
+						<a href="#">Сравнить</a>
+					</li>
+					<li>
+						<a href="#">Корзина</a>	
+					</li>
+				</ul>
+				<nav class="main-navigation">
+				<div class="site-navigation">
+					<div class="navigation-catalog-container">
+						<ul class="site-navigation-catalog">
+							<li><a href="#">Каталог товаров</a>
+								<ul>
+									<li>
+										<a href="">Виртуальная реальность</a>
+									</li>
+									<li>
+										<a href="">Моноподы для селфи</a>
+									</li>
+									<li>
+										<a href="">Экшн-камеры</a>
+									</li>
+									<li>
+										<a href="">Фитнес-браслеты</a>
+									</li>
+									<li>
+										<a href="">Умные часы</a>
+									</li>
+									<li>
+										<a href="">Квадрокоптеры</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="navigation-services-container">
+						<ul>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Гарантия</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
 				</div>
-				<div class="navigation-services-container">
-					<ul>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Гарантия</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-				</div>
+				</nav>
 			</div>
-			</nav>
 		</header>
 		<main class="container">
 			<h1 class="visually-hidden">Магазин гаджетов Device</h1>
@@ -69,8 +75,8 @@
 						<img src="img/slider-1.png" alt="Селфи палка как у Бена Стиллера">
 					</div>
 					<div class="slider-container-info">
-						<p>Делай селфи, как Бен Стиллер!</p>
-						<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 киллограмм.</p>
+						<span>Делай селфи, как Бен Стиллер!</span>
+						<p>Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 киллограмм.</p>
 						<a href="№">Подробнее</a>
 						<table>
 							<tr>
@@ -103,7 +109,7 @@
 						<img src="img/slider-3.png" alt="квадрокоптер">
 					</div>
 					<div class="slider-container-info">
-						<p>Этот обучный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+						<p>Этот обучный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.</p>
 						<a href="#">Подробнее</a>
 						<table>
 							<tr>
@@ -123,7 +129,6 @@
 					<li>
 						<div>
 							<a href="#">
-								<img src="img/sprite/sprites-item-list.png" alt="Виртуальная реальность">
 								<span>Виртуальная реальность</span>
 							</a>
 						</div>
@@ -131,7 +136,6 @@
 					<li>
 						<div>
 							<a href="#">
-								<img src="img/sprite/sprites-item-list.png" alt="Моноподы для селфи">
 								<span>Моноподы для селфи</span>
 							</a>
 						</div>
@@ -139,7 +143,6 @@
 					<li>
 						<div>
 							<a href="#">
-								<img src="img/sprite/sprites-item-list.png" alt="Экшн-камеры">
 								<span>Экшн-камеры</span>
 							</a>
 						</div>
@@ -147,7 +150,6 @@
 					<li>
 						<div>
 							<a href="#">
-								<img src="img/sprite/sprites-item-list.png" alt="Фитнес-браслеты">
 								<span>Фитнес-браслеты</span>
 							</a>
 						</div>
@@ -155,7 +157,6 @@
 					<li>
 						<div>
 							<a href="#">
-								<img src="img/sprite/sprites-item-list.png" alt="Умные часы">
 								<span>Умные часы</span>
 							</a>
 						</div>
@@ -163,36 +164,47 @@
 					<li>
 						<div>
 							<a href="#">
-								<img src="img/sprite/sprites-item-list.png" alt="Квадрокоптер">
 								<span>Квадрокоптер</span>
 							</a>
 						</div>
 					</li>
 				</ul>
 			</section>
-			<section class="services"><!-- не понимаю как смастерить данную секцию-->
-				<ul class="services-container-title">
-					<li><a href="">Доставка</a></li>
-					<li><a href="">Гарантия</a></li>
-					<li><a href="">Кредит</a></li>
-				</ul>
-				<ul class="services-container-info">
-					<div class="services-item">
-						<h2>Доставка</h2>
-						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж</p>
-						<img src="img/services/delivery.png" alt="лого курьер">
+			<section class="services">
+				<div class="services-container">
+					<div class="services-container-title">
+						<ul>
+							<li><a href="">Доставка</a></li>
+							<li><a href="">Гарантия</a></li>
+							<li><a href="">Кредит</a></li>
+						</ul>
 					</div>
-					<div class="services-item">
-						<h2>Гарантия</h2>
-						<p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-						<img src="img/services/warranty.png" alt="лого инструменты">
+					<div class="services-container-info">
+						<ul>
+							<div class="services-item">
+								<div class="services-item-content">
+									<h2>Доставка</h2>
+									<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж</p>
+								</div>
+								<img src="img/services/delivery.png" alt="лого курьер">
+							</div>
+							<div class="services-item">
+								<div class="services-item-content">
+									<h2>Гарантия</h2>
+									<p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+								</div>
+								<img src="img/services/warranty.png" alt="лого инструменты">
+							</div>
+							<div class="services-item">
+								<div class="services-item-content">
+									<h2>Кредит</h2>
+									<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+								</div>
+								<img src="img/services/credit.png" alt="лого грузчик">
+							</div>
+						</ul>
 					</div>
-					<div class="services-item">
-						<h2>Кредит</h2>
-						<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-						<img src="img/services/credit.png" alt="лого грузчик">
-					</div>
-				</ul>
+				</div>
 			</section>
 			<section class="partner">
 				<ul>
