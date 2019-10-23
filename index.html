@@ -15,7 +15,7 @@
 				<ul class="header-user-interface">
 					<li>
 						<form class="header-search">
-							<input type="search" name="search" placeholder="Поиск по сайту">
+							<input class="header-search-input" type="search" name="search" placeholder="Поиск по сайту">
 						</form>
 					</li>
 					<li>
@@ -34,24 +34,30 @@
 						<ul class="site-navigation-catalog">
 							<li><a href="#">Каталог товаров</a>
 								<ul>
-									<li>
-										<a href="">Виртуальная реальность</a>
-									</li>
-									<li>
-										<a href="">Моноподы для селфи</a>
-									</li>
-									<li>
-										<a href="">Экшн-камеры</a>
-									</li>
-									<li>
-										<a href="">Фитнес-браслеты</a>
-									</li>
-									<li>
-										<a href="">Умные часы</a>
-									</li>
-									<li>
-										<a href="">Квадрокоптеры</a>
-									</li>
+									<div class="column">
+										<li>
+											<a href="">Виртуальная реальность</a>
+										</li>
+										<li>
+											<a href="">Моноподы для селфи</a>
+										</li>
+										<li>
+											<a href="">Экшн-камеры</a>
+										</li>
+									</div>
+									<div class="column">
+										<li>
+											<a href="">Фитнес-браслеты</a>
+										</li>
+										<li>
+											<a href="">Умные часы</a>
+										</li>
+									</div>
+									<div class="column">
+										<li>
+											<a href="">Квадрокоптеры</a>
+										</li>
+									</div>
 								</ul>
 							</li>
 						</ul>
@@ -74,8 +80,8 @@
 					<div class="slider-container-img">
 						<img src="img/slider-1.png" alt="Селфи палка как у Бена Стиллера">
 					</div>
-					<div class="slider-container-info">
-						<span>Делай селфи, как Бен Стиллер!</span>
+					<div class="slider-container-info container-info-first">
+						<span>Делай селфи,<br> как Бен Стиллер!</span>
 						<p>Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 киллограмм.</p>
 						<a href="№">Подробнее</a>
 						<table>
@@ -96,19 +102,26 @@
 					<div class="slider-container-img">
 						<img src="img/slider-2.png" alt="Фитнес-браслет">
 					</div>
-					<div class="slider-container-info">
-						<p>Худеем правильно!</p>
-						<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету</p>
+					<div class="slider-container-info container-info-second" >
+						<span>Худеем<br> правильно!</span>
+						<p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и соблюдать диету</p>
 						<a href="">Подробнее</a>
-						<p>48 часов</p>
-						<p>Без подзарядки</p>
+						<table>
+							<tr>
+								<td>48 часов</td>
+							</tr>
+							<tr>
+								<td>Без подзарядки</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 				<div class="slider-item">
 					<div class="slider-container-img">
 						<img src="img/slider-3.png" alt="квадрокоптер">
 					</div>
-					<div class="slider-container-info">
+					<div class="slider-container-info container-info-third">
+						<span>Порхает как бабочка,<br> жалит как пчела!</span>
 						<p>Этот обучный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.</p>
 						<a href="#">Подробнее</a>
 						<table>
