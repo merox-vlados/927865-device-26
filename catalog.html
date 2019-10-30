@@ -7,9 +7,11 @@
     	<link href="css/style.css" rel="stylesheet">
   	</head>
 	<body>
+		<!-- style="background: url('img/device-catalog2.jpg') no-repeat ; opacity: 0.6" -->
 		<header class="main-header">
+			<div class="header-background"></div>
 			<div class="header-container">
-				<a class="main-header-logo" href="#">
+				<a class="main-header-logo" href="index.html">
 					<img src="img/logo.svg" alt="Логотип сайта Device">
 				</a>
 				<ul class="header-user-interface">
@@ -18,10 +20,11 @@
 							<input class="header-search-input" type="search" name="search" placeholder="Поиск по сайту">
 						</form>
 					</li>
-					<li>
-						<a href="#">Войти</a>
+					<li class="header-catalog-user">
+						<a class="header-user-login" href="#">Валентин Петухов</a>
+						<a class="user-close" href="#">Выйти</a>
 					</li>
-					<li>
+					<li class="header-catalog-compare">
 						<a href="#">Сравнить</a>
 					</li>
 					<li>
@@ -82,9 +85,23 @@
 			</ul>
 			<div class="container-filters-catalog">
 				<section class="filters">
+					<div class="filters-background"></div>
 					<div class="filters-container">
+						<div class="filters-container-background"></div>
 						<h2 class="filters-title">Фильтр:</h2>
 						<form class="filter" action="https://echo.htmlacademy.ru" method="get">
+							<fieldset class="filter-item">
+								<legend>Стоимость</legend>
+								<div class="range-filter">
+									<div class="range-controls">
+										<div class="scale">
+											<div class="bar"></div>
+										</div>
+										<div class="toggle toggle-min"></div>
+										<div class="toggle toggle-max"></div>
+									</div>
+								</div>
+							</fieldset>
 							<fieldset>
 								<legend>Цвет:</legend>
 								<ul>
@@ -110,7 +127,7 @@
 									</li>
 								</ul>
 							</fieldset>
-							<fieldset>
+							<fieldset class="filter-bluetooth">
 								<legend>Bluetooth:</legend>
 								<ul>
 									<li class="filter-option">
@@ -123,11 +140,12 @@
 									</li>
 								</ul>
 							</fieldset>
-							<button type="submit" class="filter-button button">Показать</button>
+							<button type="submit" class="filter-button button"><span>Показать</span></button>
 						</form>
 					</div>
 				</section>
 				<section class="catalog">
+					<div class="container-sort-background"></div>
 					<div class="container-sort">
 						<h2>Сортировка:</h2>
 						<ul>
@@ -187,21 +205,23 @@
 						</li>
 					</ul>
 					<div class="pagination">
-						<button class="button" type="button">Назад</button>
+						<button class="button button-pagination" type="button"><span>Назад</span></button>
 						<ul class="pagination-list">
 							<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
 							<li class="pagination-item"><a href="#">2</a></li>
 							<li class="pagination-item"><a href="#">3</a></li>
 						</ul>
-						<button class="button" type="button">Вперед</button>
+						<button class="button button-pagination" type="button"><span>Вперед</span></button>
 					</div>
 				</section>
 			</div>
 		</main>
-		<footer class="main-footer">
+	<footer class="main-footer">
     	<div class="main-footer-container">
 	    	<div class="footer-container-interface">
-		    	<img src="img/logo.svg">
+	    		<a href="index.html">
+	    			<img src="img/logo2.svg">
+	    		</a>
 		    	<ul class="footer-user-interface">
 					<li>
 						<a href="#">Войти</a>
@@ -223,9 +243,10 @@
 		    			<li><a href="">Контакты</a></li>
 		    		</ul>
 		    	</div>
-				<p>Тел: +7(495)495-95-95 </p>
+				<p class="phone">Тел: +7(495)495-95-95 </p>
 			</div>
 			<div class="footer-container-social">
+				<div class="footer-social-decore"></div>
 				<ul class="footer-social-button">
 					<li>
 						<a class="social-button" href="#"></a>
@@ -237,26 +258,48 @@
 						<a class="social-button" href="#"></a>
 					</li>
 				</ul>
+				<div class="footer-logo-html">
+					<a class="logo" href="https://htmlacademy.ru/intensive/htmlcss">
+						<img src="img/logo-html2.svg">
+					</a>
+				</div>
 			</div>
-			<div class="footer-logo-html">
-				<a class="logo" href="">
-					<img src="img/logo-html.svg">
-				</a>
-			</div>
+			
 		</div>    
 	</footer>
-    	<section class="visually-hidden">
-				<h2 class="visually-hidden">Личный кабинет</h2>
-				<span class="close"></span> <!-- крестик закрытия /-->
-				<form action="https://echo.htmlacademy.ru" method="post">
-					<label for="user-login">Ваше имя</label>
-					<input id="user-login" type="text" name="login" placeholder="Имя Фамилия">
-					<label for="user-email">Ваш e-mail:</label>
-					<input id="user-email" type="email" name="email" placeholder="email@example.com">
-					<label for="user-note">Текст письма:</label>
-					<textarea name="note" id="user-note" placeholder="В свободной форме"></textarea>
-					<button type="button">Отправить</button>
-				</form>
-		</section>
+    	<section class="modal modal-login">
+			<h2 class="visually-hidden">Личный кабинет</h2>
+			<button class="modal-close" type="button">Закрыть</button>
+			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+				<div class="user-info">
+					<div>
+						<p>
+							<label for="user-login">Ваше имя</label><br>
+							<input id="user-login" type="text" name="login" placeholder="Имя Фамилия">
+						</p>
+					</div>
+					<div>
+						<p>
+							<label for="user-email">Ваш e-mail:</label><br>
+							<input id="user-email" type="email" name="email" placeholder="email@example.com">
+						</p>
+					</div>
+				</div>
+				<div class="textarea-info">
+					<p>
+						<label for="user-note">Текст письма:</label><br>
+						<textarea name="note" id="user-note" placeholder="В свободной форме"></textarea>
+					</p>
+				</div>
+				<button class="button login-submit-button" type="button"><span>Отправить</span></button>
+			</form>
+	</section>
+	<section class="modal modal-map">
+		<h2 class="visually-hidden">Как до нас добраться</h2>
+		<p><img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15"></p>
+		<button class="modal-close" type="button">
+			<span class="visually-hidden">Закрыть</span>
+		</button>
+	</section>
 </body>
 </html>
