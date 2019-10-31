@@ -194,6 +194,10 @@ p {
 	display: inline-block;
 }
 
+.header-user-interface .header-search input:focus+.button-search:active {
+	display: inline-block;
+}
+
 
 
 
@@ -220,6 +224,7 @@ p {
 }
 
 .button-search:active {
+	display: inline-block;
 	color: #4d4d4d;
 }
 
