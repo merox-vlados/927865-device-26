@@ -333,9 +333,11 @@ p {
 
 .navigation-catalog-container .site-navigation-catalog ul {
 	display: flex;
-    width: 1100px;
+    flex-direction: column;
+    width: 437px;
     height: 127px;
     padding: 20px 0;
+    padding-right: 663px;
     padding-left: 60px;
     position: absolute;
     top: 20px;
@@ -343,6 +345,7 @@ p {
     background-image: url(../img/pattern-light.jpg);
     visibility: hidden;
     z-index: 10;
+    flex-wrap: wrap;
 }
 
 
@@ -361,20 +364,10 @@ p {
 	color: #000000;
 	text-transform: none;
 	letter-spacing: normal;
-}
-
-.site-navigation-catalog .column {
-	margin-top: 6px;
+	display: block;
 }
 
 
-.site-navigation-catalog .column:nth-child(2) {
-	margin-left: 63px;
-}
-
-.site-navigation-catalog .column:last-child {
-	margin-left: 77px;
-}
 
 .navigation-services-container {
 	width: 550px;
@@ -735,13 +728,13 @@ p {
 	padding-left: 139px;
 }
 
-.services-container-title ul {
+.services-container-title div {
 	display: flex;
     flex-direction: column;
     padding-top: 17px;
 }
 
-.services-container-title ul li {
+.services-container-title div li {
 	position: relative;
     font-family: "Gilroy ExtraBold", Arial, sans-serif;
     font-weight: 700;
@@ -755,22 +748,22 @@ p {
     display: inline-block;
 }
 
-.services-container-title ul label {
+.services-container-title div label {
 	display: inline-block;
 	margin-bottom: 31px;
 
 }
 
-.services-container-title ul li:nth-child(2) {
+.services-container-title div li:nth-child(2) {
 	padding-left: 7px;
 }
-.services-container-title ul label:last-child li {
+.services-container-title div label:last-child li {
 	padding-top: 4px;
     padding-left: 37px;
 }
 
 
-.services-container-title ul li:before {
+.services-container-title div li:before {
 	content: "";
 	position: absolute;
 	width: 160px;
@@ -781,17 +774,17 @@ p {
 	z-index: -1;
 }
 
-.services-container-title ul li:hover::before {
+.services-container-title div li:hover::before {
 	height: 34px;
 	top: -3px;
 }
 
-.services-container-title ul label:last-child li:hover::before {
+.services-container-title div label:last-child li:hover::before {
 	height: 34px;
 	top: 1px;
 }
 
-.services-container-title ul label:last-child li:before {
+.services-container-title div label:last-child li:before {
 	top: 16px;
     left: 1px;
 }
