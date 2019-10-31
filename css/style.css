@@ -734,7 +734,7 @@ p {
     padding-top: 17px;
 }
 
-.services-container-title div li {
+.services-container-title div span {
 	position: relative;
     font-family: "Gilroy ExtraBold", Arial, sans-serif;
     font-weight: 700;
@@ -754,16 +754,16 @@ p {
 
 }
 
-.services-container-title div li:nth-child(2) {
+.services-container-title div span:nth-child(2) {
 	padding-left: 7px;
 }
-.services-container-title div label:last-child li {
+.services-container-title div label:last-child span {
 	padding-top: 4px;
     padding-left: 37px;
 }
 
 
-.services-container-title div li:before {
+.services-container-title div span:before {
 	content: "";
 	position: absolute;
 	width: 160px;
@@ -774,17 +774,17 @@ p {
 	z-index: -1;
 }
 
-.services-container-title div li:hover::before {
+.services-container-title div span:hover::before {
 	height: 34px;
 	top: -3px;
 }
 
-.services-container-title div label:last-child li:hover::before {
+.services-container-title div label:last-child span:hover::before {
 	height: 34px;
 	top: 1px;
 }
 
-.services-container-title div label:last-child li:before {
+.services-container-title div label:last-child span:before {
 	top: 16px;
     left: 1px;
 }
@@ -805,9 +805,9 @@ p {
   display: flex;
 }
 
-#service1:checked ~ .services-container-title label[for="service1"] li:before,
-#service2:checked ~ .services-container-title label[for="service2"] li:before,
-#service3:checked ~ .services-container-title label[for="service3"] li:before {
+#service1:checked ~ .services-container-title label[for="service1"] span:before,
+#service2:checked ~ .services-container-title label[for="service2"] span:before,
+#service3:checked ~ .services-container-title label[for="service3"] span:before {
 		display: none;
 }
 
