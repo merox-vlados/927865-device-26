@@ -140,7 +140,7 @@ p {
 }
 
 .header-user-interface li:nth-child(2) {
-	margin-left: 348px;
+	margin-left: 305px;
 }
 .header-user-interface li:nth-child(3) {
 	margin-left: 237px;
@@ -148,6 +148,10 @@ p {
 .header-user-interface li:nth-child(4) {
 	margin-left: 60px;
 	
+}
+
+.header-search-input {
+	width: 225px;
 }
 
 .header-user-interface li {
@@ -168,10 +172,12 @@ p {
 }
 
 .header-user-interface li input {
-	border: none;
-	background: none;
-	outline: none;
-	opacity: 0.5;
+    border: none;
+    background: none;
+    outline: none;
+    opacity: 0.5;
+    padding-right: 63px;
+    color: #000000;
 }
 
 .header-user-interface li input:hover {
@@ -179,25 +185,42 @@ p {
 }
 
 .header-user-interface li input:focus {
+	border-bottom: 1px solid #000;
 	opacity: 1;
-	border-bottom: 1px solid #000000;
+	color: #000000;
 }
 
-.header-user-interface li input:focus .button-search {
-	visibility: visible;
+.header-user-interface .header-search input:focus+.button-search {
+	display: inline-block;
 }
+
+
+
 
 .button-search {
 	position: absolute;
-    top: -9px;
-    right: -59px;
+    top: -5px;
+    right: 0px;
     font-size: 15px;
-    width: 42px;
-    height: 15px;
-    padding: 1px 9px 16px 7px;
+    width: 64px;
+    height: 30px;
+    padding: 6px 6px 6px 6px;
     border: 1px solid #000000;
+    border-bottom: 0;
     color: #000000;
-    visibility: hidden;
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-search:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.button-search:active {
+	color: #4d4d4d;
 }
 
 
@@ -1342,7 +1365,8 @@ input[type="radio"] {
 }
 
 .filter-button:after,
-.login-submit-button:after {
+.login-submit-button:after,
+.catalog-item .action .basket:after {
 	content: "";
 	position: absolute;
 	width: 200px;
@@ -1356,13 +1380,16 @@ input[type="radio"] {
 .filter-button:hover::after,
 .filter-button:active::after,
 .login-submit-button:hover::after,
-.login-submit-button:active::after {
+.login-submit-button:active::after,
+.catalog-item .action .basket:hover::after,
+.catalog-item .action .basket:active::after {
 	top: -1px;
 	height: 25px;
 }
 
 .filter-button:active span,
-.login-submit-button:active span {
+.login-submit-button:active span,
+.catalog-item .action .basket:active span {
 	opacity: 0.5;
 }
 
@@ -1377,7 +1404,8 @@ input[type="radio"] {
 }
 
 .catalog-list li:not(:nth-child(2n)) {
-	padding-right: 40px;
+	margin-right: 40px;
+
 }
 
 .container-sort-background {
@@ -1482,13 +1510,14 @@ input[type="radio"] {
 	margin-top: 68px;
 }
 
-.catalog-item div {
+.catalog-item .catalog-content {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 21px;
 }
 
 .catalog-list .catalog-item {
+	position: relative;
 	width: 360px;
 	height: 460px;
 }
@@ -1539,6 +1568,47 @@ input[type="radio"] {
  	line-height: 24px;
 }
 
+.catalog-item:hover .action {
+	display: block;
+}
+
+.catalog-item .action {
+	display: none;
+	position: absolute;
+	top: 0px;
+	width: 360px;
+	height: 382px;
+
+	background-color: rgba(255,255,255,0.9);
+	z-index: 10;
+}
+
+.catalog-item .action .basket,
+.catalog-item .action .comparison {
+	display: inline-block;
+    position: relative;
+    padding-left: 40px;
+    top: 150px;
+    left: 73px;
+}
+
+.catalog-item .action .comparison {
+	margin-top: 22px;
+	padding-left: 22px;
+	color: #000000;
+	opacity: 0.6;
+}
+
+.catalog-item .action .comparison:hover {
+	opacity: 1;
+}
+
+.catalog-item .action .comparison:active {
+	opacity: 0.2;
+}
+
+
+
 .button-pagination {
 	padding: 20px 20px;
 	cursor: pointer;
@@ -1560,6 +1630,7 @@ input[type="radio"] {
     font-family: "Gilroy ExtraBold", Arial, sans-serif;
     font-size: 16px;
     margin-top: 35px;
+    margin-bottom: 65px;
 }
 
 .pagination ul {
