@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-  	<head>
-    	<meta charset="utf-8">
-    	<title>HTML Academy: Девайс</title>
-    	<link href="css/normalize.css" rel="stylesheet">
-    	<link href="css/style.css" rel="stylesheet">
-  	</head>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Девайс</title>
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style-optimized.css" rel="stylesheet">
+	</head>
 	<body>
 		<header class="main-header">
 			<div class="header-background"></div>
@@ -32,41 +32,41 @@
 					</li>
 				</ul>
 				<nav class="main-navigation">
-				<div class="site-navigation">
-					<div class="navigation-catalog-container">
-						<ul class="site-navigation-catalog">
-							<li><a href="#">Каталог товаров</a>
-								<ul>
-									<li>
-										<a href="">Виртуальная реальность</a>
-									</li>
-									<li>
-										<a href="">Моноподы для селфи</a>
-									</li>
-									<li>
-										<a href="">Экшн-камеры</a>
-									</li>
-									<li>
-										<a href="">Фитнес-браслеты</a>
-									</li>
-									<li>
-										<a href="">Умные часы</a>
-									</li>
-									<li>
-										<a href="">Квадрокоптеры</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
+					<div class="site-navigation">
+						<div class="navigation-catalog-container">
+							<ul class="site-navigation-catalog">
+								<li><a href="#">Каталог товаров</a>
+									<ul class="navigation-catalog-items">
+										<li>
+											<a href="">Виртуальная реальность</a>
+										</li>
+										<li>
+											<a href="catalog.html">Моноподы для селфи</a>
+										</li>
+										<li>
+											<a href="">Экшн-камеры</a>
+										</li>
+										<li>
+											<a href="">Фитнес-браслеты</a>
+										</li>
+										<li>
+											<a href="">Умные часы</a>
+										</li>
+										<li>
+											<a href="">Квадрокоптеры</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="navigation-services-container">
+							<ul>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Гарантия</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="navigation-services-container">
-						<ul>
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Гарантия</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
-					</div>
-				</div>
 				</nav>
 			</div>
 		</header>
@@ -157,10 +157,10 @@
 							<img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи палка">
 							<div class="catalog-content">
 								<h3>
-									<span>Любительская селфи палка</span>
+									<span class="catalog-content-name">Любительская селфи палка</span>
 								</h3>
 								<p>
-									<span>500 руб.</span>
+									<span class="catalog-content-price">500 руб.</span>
 								</p>
 							</div>
 							<div class="action">
@@ -172,10 +172,10 @@
 							<img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
 							<div class="catalog-content">
 								<h3>
-									<span>Профессиональная<br> селфи-палка</span>
+									<span class="catalog-content-name">Профессиональная селфи-палка</span>
 								</h3>
 								<p>
-									<span>1500 руб.</span>
+									<span class="catalog-content-price">1500 руб.</span>
 								</p>
 							</div>
 							<div class="action">
@@ -187,10 +187,10 @@
 							<img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
 							<div class="catalog-content">
 								<h3>
-									<span>Непотопляемая селфи-палка</span>
+									<span class="catalog-content-name">Непотопляемая селфи-палка</span>
 								</h3>
 								<p>
-									<span>2 500 руб.</span>
+									<span class="catalog-content-price">2 500 руб.</span>
 								</p>
 							</div>
 							<div class="action">
@@ -202,10 +202,10 @@
 							<img src="img/product-4.jpg" width="360" height="380" alt="«Следуй за мной»">
 							<div class="catalog-content">
 								<h3>
-									<span>Селфи-палка «Следуй за<br> мной»</span>
+									<span class="catalog-content-name">Селфи-палка «Следуй за мной»</span>
 								</h3>
 								<p>
-									<span>4 900 руб.</span>
+									<span class="catalog-content-price">4 900 руб.</span>
 								</p>
 							</div>
 							<div class="action">
@@ -226,90 +226,109 @@
 				</section>
 			</div>
 		</main>
-	<footer class="main-footer">
-    	<div class="main-footer-container">
-	    	<div class="footer-container-interface">
-	    		<a href="index.html">
-	    			<img src="img/logo2.svg" width="163" height="35" alt="логотип Device">
-	    		</a>
-		    	<ul class="footer-user-interface">
-					<li>
-						<a href="#">Войти</a>
-					</li>
-					<li>
-						<a href="#">Сравнить</a>
-					</li>
-					<li>
-						<a href="#">Корзина</a>	
-					</li>
-				</ul>
-			</div>
-			<div class="footer-container-services">
-		    	<p>г. Москва, ул. Строителей, 15</p>
-		    	<div class="footer-services">
-		    		<ul class="footer-services-item">
-		    			<li><a href="">Доставка</a></li>
-		    			<li><a href="">Гарантия</a></li>
-		    			<li><a href="">Контакты</a></li>
-		    		</ul>
-		    	</div>
-				<p class="phone">Тел: +7(495)495-95-95 </p>
-			</div>
-			<div class="footer-container-social">
-				<div class="footer-social-decore"></div>
-				<ul class="footer-social-button">
-					<li>
-						<a class="social-button" href="#"></a>
-					</li>
-					<li>
-						<a class="social-button" href="#"></a>
-					</li>
-					<li>
-						<a class="social-button" href="#"></a>
-					</li>
-				</ul>
-				<div class="footer-logo-html">
-					<a class="logo" href="https://htmlacademy.ru/intensive/htmlcss">
-						<img src="img/logo-html2.svg" width="27" height="35" alt="логотип академии">
+		<footer class="main-footer">
+			<div class="main-footer-container">
+				<div class="footer-container-interface">
+					<a href="">
+						<img src="img/logo2.svg" width="163" height="35" alt="логотип Device">
 					</a>
+					<ul class="footer-user-interface">
+						<li>
+							<a href="#">Войти</a>
+						</li>
+						<li>
+							<a href="#">Сравнить</a>
+						</li>
+						<li>
+							<a href="#">Корзина</a>	
+						</li>
+					</ul>
+				</div>
+				<div class="footer-container-services">
+					<p>г. Москва, ул. Строителей, 15</p>
+					<div class="footer-services">
+						<ul class="footer-services-item">
+							<li><a href="">Доставка</a></li>
+							<li><a href="">Гарантия</a></li>
+							<li><a href="">Контакты</a></li>
+						</ul>
+					</div>
+					<a href="tel:+74954959595" class="phone">Тел: +7(495)495-95-95</a>
+				</div>
+				<div class="footer-container-social">
+					<ul class="footer-social-button">
+						<li>
+							<a class="social-button" href="#">
+								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+									<path fill="#FFFFFF" d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16c8.837,0,16-7.164,16-16S24.837,0,16,0z M20.062,9.455h-3.021 v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H11v-3.445h3.021V9.455c0-1.902,1.353-3.445,3.021-3.445h3.021V9.455z"/>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="social-button" href="#">
+								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+									<g>
+										<path fill="#FFFFFF" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14 h-0.897v6.838h11.396V14.86h-0.897C20.865,15.227,20.916,15.606,20.916,16z"/>
+										<path fill="#FFFFFF" d="M15.978,18.659c1.466,0,2.659-1.193,2.659-2.659s-1.193-2.659-2.659-2.659 c-1.466,0-2.659,1.193-2.659,2.659S14.511,18.659,15.978,18.659z"/>
+										<rect x="18.637" y="10.302" fill="#FFFFFF" width="3.039" height="3.039"/>
+										<path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z M23.955,21.698c0,1.254-1.025,2.279-2.279,2.279H10.279C9.026,23.978,8,22.952,8,21.698V10.302c0-1.253,1.026-2.279,2.279-2.279 h11.396c1.254,0,2.279,1.026,2.279,2.279V21.698z"/>
+									</g>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="social-button" href="#">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+									<g id="Layer_1"></g>
+									<g id="Layer_2">
+										<path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z M23.944,12.809c-0.251,6.516-3.463,10.832-10.992,10.702c-0.14,0-0.205,0-0.233,0c-0.015,0-0.021,0-0.021,0 c-0.029,0-0.094,0-0.232,0c-0.447,0-4.543-0.443-5.344-1.823c2.479,0.19,4.247-0.406,5.12-1.136 c-1.048-0.289-2.923-0.461-3.251-2.848c0.384,0.104,0.618,0.221,1.299,0.113c-1.307-0.824-2.758-1.519-2.679-3.643 c0.311,0.317,1.164,0.518,1.46,0.457c-0.768-0.233-2.149-3.244-0.974-4.781c1.984,1.79,4.075,3.482,7.804,3.643 c0.227-2.214,1.24-3.699,3.168-4.325c1.84-0.479,3.255,0.26,3.901,1.138c0.737-0.224,1.453-0.466,2.193-0.685 c-0.004,0.833-0.569,1.463-0.935,1.709c0.747,0.165,1.423-0.475,1.423-0.475C25.467,11.818,24.557,12.58,23.944,12.809z"/>
+									</g>
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<div class="footer-logo-html">
+						<a class="logo" href="https://htmlacademy.ru/intensive/htmlcss">
+							<img src="img/logo-html2.svg" width="27" height="35" alt="логотип академии">
+						</a>
+					</div>
 				</div>
 			</div>
-			
-		</div>    
-	</footer>
-    	<section class="modal modal-login">
-			<h2 class="visually-hidden">Личный кабинет</h2>
-			<button class="modal-close" type="button">Закрыть</button>
-			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-				<div class="user-info">
-					<div>
+		</footer>
+		<section class="modal modal-login">
+				<h2 class="visually-hidden">Личный кабинет</h2>
+				<button class="modal-close" type="button">Закрыть</button>
+				<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+					<div class="user-info">
+						<div>
+							<p>
+								<label for="user-login">Ваше имя</label><br>
+								<input id="user-login" type="text" name="login" placeholder="Имя Фамилия">
+							</p>
+						</div>
+						<div>
+							<p>
+								<label for="user-email">Ваш e-mail:</label><br>
+								<input id="user-email" type="email" name="email" placeholder="email@example.com">
+							</p>
+						</div>
+					</div>
+					<div class="textarea-info">
 						<p>
-							<label for="user-login">Ваше имя</label><br>
-							<input id="user-login" type="text" name="login" placeholder="Имя Фамилия">
+							<label for="user-note">Текст письма:</label><br>
+							<textarea name="note" id="user-note" placeholder="В свободной форме"></textarea>
 						</p>
 					</div>
-					<div>
-						<p>
-							<label for="user-email">Ваш e-mail:</label><br>
-							<input id="user-email" type="email" name="email" placeholder="email@example.com">
-						</p>
-					</div>
-				</div>
-				<div class="textarea-info">
-					<p>
-						<label for="user-note">Текст письма:</label><br>
-						<textarea name="note" id="user-note" placeholder="В свободной форме"></textarea>
-					</p>
-				</div>
-				<button class="button login-submit-button" type="button"><span>Отправить</span></button>
-			</form>
-	</section>
-	<section class="modal modal-map">
-		<h2 class="visually-hidden">Как до нас добраться</h2>
-		<p><img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15"></p>
-		<button class="modal-close" type="button">
-			<span class="visually-hidden">Закрыть</span>
-		</button>
-	</section>
+					<button class="button login-submit-button" type="button"><span>Отправить</span></button>
+				</form>
+		</section>
+		<section class="modal modal-map">
+			<h2 class="visually-hidden">Как до нас добраться</h2>
+			<p><img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15"></p>
+			<button class="modal-close" type="button">
+				<span class="visually-hidden">Закрыть</span>
+			</button>
+		</section>
 </body>
 </html>
