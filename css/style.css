@@ -1822,7 +1822,7 @@ input[type="radio"] {
 	display: flex;
 	position: relative;
 	margin-top: 60px;
-	margin-left: 510px;
+	padding-left: 510px;
 	justify-content: space-between;
 	width: 650px;
 }
