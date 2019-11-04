@@ -109,9 +109,11 @@ a {
 
 .header-user-interface {
 	display: flex;
+	justify-content: space-between;
 	flex-direction: row;
 	margin: 0 60px;
 	padding: 0px;
+	width: 1040px;
 }
 
 .header-user-interface li:nth-child(2):hover,
@@ -863,6 +865,7 @@ a {
 .services-item img {
 	margin-left: 130px;
 	margin-top: 16px;
+	width: 171px;
 }
 
 .partner-container {
@@ -1784,7 +1787,6 @@ input[type="radio"] {
 	margin-top: 2px;
 	letter-spacing: 0.029em;
 	color: white;
-
 }
 
 .footer-services-item {
@@ -1818,6 +1820,7 @@ input[type="radio"] {
 	margin-top: 60px;
 	margin-left: 510px;
 	justify-content: space-between;
+	width: 650px;
 }
 
 .footer-container-social:before {
