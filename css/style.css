@@ -1762,6 +1762,7 @@ input[type="radio"] {
 .footer-container-services {
 	display: flex;
 	margin-top: 19px;
+	justify-content: space-between;
 }
 
 .footer-container-services p {
@@ -1775,18 +1776,15 @@ input[type="radio"] {
 
 
 .footer-services {
-	margin-left: 123px;
+	margin-right: 95px;
 	margin-top: 7px;
 }
 
 .footer-container-services .phone {
-	display: inline-block;
-	margin-left: 205px;
 	margin-top: 2px;
 	letter-spacing: 0.029em;
-	vertical-align: top;
 	color: white;
-	width: 175px;
+
 }
 
 .footer-services-item {
