@@ -36,7 +36,7 @@
 }
 
 body {
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	padding: 0;
 	width: 1440px;
 	font-family: "Open Sans", Arial, sans-serif;
@@ -1138,7 +1138,7 @@ a {
 
 .filters {
 	position: relative;
-	width: 528px;
+	width: 394px;
 }
 
 .filters-background {
@@ -1245,7 +1245,7 @@ a {
 	height: 41px;
 	margin-bottom: 15px;
 	padding: 35px;
-	padding-right: 20px;
+	padding-right: 64px;
 	padding-left: 5px;
 	border-radius: 5px;
 }
@@ -1417,8 +1417,9 @@ input[type="radio"] {
 }
 
 .catalog {
-	margin-left: 136px;
+	margin-left: 76px;
 	position: relative;
+	width: 925px;
 }
 
 .catalog ul {
@@ -1769,11 +1770,12 @@ input[type="radio"] {
 	padding-bottom: 1px;
 	font-size: 14px;
 	vertical-align: top;
+	width: 260px;
 }
 
 
 .footer-services {
-	margin-left: 170px;
+	margin-left: 123px;
 	margin-top: 7px;
 }
 
@@ -1784,6 +1786,7 @@ input[type="radio"] {
 	letter-spacing: 0.029em;
 	vertical-align: top;
 	color: white;
+	width: 175px;
 }
 
 .footer-services-item {
