@@ -811,6 +811,7 @@ a {
 #service2:checked ~ .services-container-info #item2,
 #service3:checked ~ .services-container-info #item3 {
 	display: flex;
+	justify-content: space-between;
 }
 
 #service1:checked ~ .services-container-title label[for="service1"] span:before,
@@ -848,6 +849,10 @@ a {
 	position: relative;
 }
 
+.services-item-content {
+	width: 462px;
+}
+
 .services-item-content h2 {
 	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	margin: 0;
@@ -863,7 +868,6 @@ a {
 }
 
 .services-item img {
-	margin-left: 130px;
 	margin-top: 16px;
 	width: 171px;
 }
